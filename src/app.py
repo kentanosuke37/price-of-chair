@@ -24,6 +24,3 @@ from src.models.alerts.views import alert_blueprint
 app.register_blueprint(user_blueprint, url_prefix="/users")
 app.register_blueprint(store_blueprint, url_prefix="/stores")
 app.register_blueprint(alert_blueprint, url_prefix="/alerts")
-
-if __name__ == '__main__':
-    app.run(debug=app.config['DEBUG'], port=4990)
